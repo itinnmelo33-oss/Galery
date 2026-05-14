@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerry Clothing - Moda Exclusiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-tshirt"></i> Galerry Clothing</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Moda que <span>Define</span> seu Estilo</h1>
+            <p>Descubra as últimas tendências com qualidade premium</p>
+            <button class="cta-button">Comprar Agora</button>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop" alt="Camiseta Premium">
+                    <div class="produto-info">
+                        <h3>Camiseta Premium</h3>
+                        <p class="preco-antigo">R$ 129,90</p>
+                        <p class="preco">R$ 89,90</p>
+                        <button class="add-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=400&h=500&fit=crop" alt="Calça Jeans">
+                    <div class="produto-info">
+                        <h3>Calça Jeans Slim</h3>
+                        <p class="preco-antigo">R$ 199,90</p>
+                        <p class="preco">R$ 149,90</p>
+                        <button class="add-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1593778459988-0bf4f3a136d2?w=400&h=500&fit=crop" alt="Jaqueta Couro">
+                    <div class="produto-info">
+                        <h3>Jaqueta de Couro</h3>
+                        <p class="preco-antigo">R$ 399,90</p>
+                        <p class="preco">R$ 299,90</p>
+                        <button class="add-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=500&fit=crop" alt="Vestido Floral">
+                    <div class="produto-info">
+                        <h3>Vestido Floral</h3>
+                        <p class="preco-antigo">R$ 179,90</p>
+                        <p class="preco">R$ 129,90</p>
+                        <button class="add-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h2>Sobre a Galerry Clothing</h2>
+                    <p>Somos apaixonados por moda e qualidade. Cada peça é cuidadosamente selecionada para oferecer o melhor em estilo e conforto.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Entrega rápida</li>
+                        <li><i class="fas fa-check"></i> 30 dias para devolução</li>
+                        <li><i class="fas fa-check"></i> Pagamento facilitado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrinho Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: <span id="cartTotal">R$ 0,00</span></h3>
+                <button class="checkout-btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Galerry Clothing</h3>
+                    <p>Moda de qualidade para todos os estilos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@galerry.com.br</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                5                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Galerry Clothing. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
